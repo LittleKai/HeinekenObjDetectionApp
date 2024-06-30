@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="preferences"
+        android:title="\nSetting">
+<!--        <EditTextPreference-->
+<!--            android:defaultValue="6"-->
+<!--            android:dialogMessage="Set max results will be shown in object detection. (Defualt: 6)"-->
+<!--            android:dialogTitle="Number of Results"-->
+<!--            android:inputType="number"-->
+<!--            android:key="max_result"-->
+<!--            android:negativeButtonText="Cancel"-->
+<!--            android:positiveButtonText="Save"-->
+<!--            android:summary="Change number of detected results which will be listed. Max results: 100."-->
+<!--            android:title="Max Results" />-->
+        <ListPreference
+            android:defaultValue="360"
+            android:dependency="rotation"
+            android:entries="@array/pref_rotation_titles"
+            android:entryValues="@array/pref_rotation"
+            android:key="rotation"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="Image Rotation" />
+        <!--        android:dependency="model"-->
+
+        <ListPreference
+            android:defaultValue="model.tflite"
+            android:entries="@array/list_model_entries"
+            android:entryValues="@array/models_spinner_titles"
+            android:key="model"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="Model" />
+        <!--        android:dependency="thread"-->
+
+<!--        <ListPreference-->
+<!--            android:defaultValue="1"-->
+<!--            android:entries="@array/pref_thread"-->
+<!--            android:entryValues="@array/pref_thread"-->
+<!--            android:key="thread"-->
+<!--            android:negativeButtonText="@null"-->
+<!--            android:positiveButtonText="@null"-->
+<!--            android:title="Threads of CPU" />-->
+        <!--        android:dependency="crop_image"-->
+
+        <ListPreference
+            android:defaultValue="640"
+            android:entries="@array/pref_crop_image_titles"
+            android:entryValues="@array/pref_crop_image"
+            android:key="crop_size"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="Crop Input Image" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="resize_input"
+            android:title="Enable resize input image into 640x640" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="obj_brand"
+            android:title="Identify the brand of objects" />
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/label_default"
+            android:entries="@array/label_values"
+            android:entryValues="@array/label_values"
+            android:key="list_label"
+            android:summary="Choose labels to draw detected boxes"
+            android:title="Choose Labels" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

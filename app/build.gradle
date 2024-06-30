@@ -1,0 +1,162 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+
+}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+//apply plugin: 'de.undercouch.download'
+
+android {
+    namespace 'com.littlekai.heneikenobjdetection'
+    compileSdk 34
+
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        namespace "com.littlekai.heneikenobjdetection"
+        applicationId "com.littlekai.heneikenobjdetection"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0.0"
+
+
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_7
+//        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+//        jvmTarget = '17'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    //exclude duplicate files
+    packagingOptions {
+        exclude 'META-INF/LICENSE-notice.md'
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    androidResources {
+        noCompress 'tflite'
+    }
+}
+project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
+project.ext.TEST_ASSETS_DIR = projectDir.toString() + '/src/androidTest/assets'
+
+//toolchains {
+//    this.plugin.apply {
+//        // Specify Java version for tasks
+//        version = '1.7'  // Adjust to match your chosen compileOptions version
+//    }}
+
+dependencies {
+    // Kotlin lang
+    implementation libs.androidx.core.ktx
+    implementation libs.kotlin.stdlib.jdk7
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'androidx.activity:activity-ktx:1.9.0'
+
+    // App compat and UI things
+    implementation libs.androidx.appcompat
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.2'
+    implementation libs.androidx.constraintlayout
+    implementation libs.material
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+    androidTestImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+
+    // Navigation library
+    def nav_version = "2.3.5"
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+
+    // CameraX core library
+    def camerax_version = '1.1.0-beta03'
+    implementation libs.androidx.camera.core
+    // CameraX Camera2 extensions
+    implementation libs.androidx.camera.camera2
+    // CameraX Lifecycle library
+    implementation libs.androidx.camera.lifecycle
+    // CameraX View class
+    implementation libs.androidx.camera.view
+    //WindowManager
+    implementation libs.androidx.window
+
+    // Unit testing
+    testImplementation 'androidx.test.ext:junit:1.1.5'
+    testImplementation 'androidx.test:rules:1.5.0'
+    testImplementation 'androidx.test:runner:1.5.2'
+    testImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    testImplementation 'org.robolectric:robolectric:4.4'
+
+    // Instrumented testing
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test:core:1.5.0"
+    androidTestImplementation "androidx.test:rules:1.5.0"
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+
+    implementation libs.tensorflow.lite.task.vision
+    // Import the GPU delegate plugin Library for GPU inference
+    implementation libs.tensorflow.lite.gpu.delegate.plugin
+    implementation libs.tensorflow.lite.gpu
+
+    implementation libs.androidx.lifecycle.livedata.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.fragment.ktx
+
+    //Other Views
+    api libs.spacenavigationview
+    implementation libs.expandablerecyclerview
+
+    implementation libs.expandable.layout
+    implementation libs.sqliteassethelper
+//    api 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation(libs.material)
+    implementation libs.androidx.preference.ktx
+
+
+
+    // JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
+
+    // Dependencies for AndroidX Test
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Dependencies for GoogleMap
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+//    annotationProcessor libs.compiler
+    // fix jupiter
+    kapt "com.google.dagger:dagger-compiler:2.38.1"
+    implementation "com.google.dagger:dagger:2.38.1"
+
+}
