@@ -19,4 +19,4 @@ We welcome contributions from the community. If you have any suggestions or find
 Link demo video:
 https://youtu.be/eKEXYq2gVTA
 
-
+Note: After granting permissions on first app use, you may need to restart the app.
