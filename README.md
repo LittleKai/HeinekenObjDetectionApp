@@ -9,7 +9,8 @@ Installation Guide
 1.	Installation
 o	Download the application from Google Drive:
 	https://drive.google.com/file/d/1n_prUJRjVh_YmWB2nVhG7E7BypGkzV4q/view
-o	Extract the downloaded file to your local machine.
+* This app version still isn't the best version, I will update a better version with better model.
+o	Instal the downloaded file to your local machine.
 References
 •	Heineken API Documentation
 •	User Guide
@@ -19,4 +20,4 @@ We welcome contributions from the community. If you have any suggestions or find
 Link demo video:
 https://youtu.be/eKEXYq2gVTA
 
-Note: After granting permissions on first app use, you may need to restart the app.
+**Note: After granting permissions on first app use, you may need to restart the app.
