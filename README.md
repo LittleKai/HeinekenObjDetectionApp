@@ -8,7 +8,7 @@ This is the application I developed for the AngelHack 2024 competition in Ho Chi
 
   ![Demo Image](Demo/Demo_HeneikenObjDetection.jpg)
   
-or you can see more [here.](https://github.com/LittleKai/HeinekenObjDetectionApp/blob/main/Demo/Project_Heniken_aio_06.pdf)
+or you can see more [here.](https://drive.google.com/file/d/1KeeAbKOv8iMoRrkNwEJ0Zel0SdPSofT2/view?usp=drive_link)
 
 2. Key Features:
    
