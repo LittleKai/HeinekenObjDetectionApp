@@ -1,18 +1,17 @@
 Heineken Product Classifier App
-Introduction
+Introduction:
 Welcome to the Heineken Product Detection App project! This app helps users quickly and accurately identify and detect Heineken products. Leveraging advanced AI technology, the app enhances user experience by providing detailed information about Heineken's beer and beverage products.
-Key Features
-•	Product Detection: Identify and detect Heineken products including beer, beverages, and other items.
+1. Key Features:
+•	Product Detection: Identify and detect Heineken products including beer, beverages, and other items. The total number of detectable classes is 60. You can view the list of classes here.
 •	Detailed Information: Provide detailed information about each product, including ingredients, origin, and related details.
 •	Community Interaction: Encourage user engagement and product sharing within the Heineken community.
 Installation Guide
-1.	Installation
-o	Download the application from Google Drive:
+2.	Installation:
+
+•	Download the application from Google Drive:
 	https://drive.google.com/file/d/1n_prUJRjVh_YmWB2nVhG7E7BypGkzV4q/view
-* This app version still isn't the best version, I will update a better version with a better model.
 
-
-o	Install the downloaded file to your local machine.
+•	Install the downloaded APK in your Android Smartphone.
 References:
 •	Heineken API Documentation
 •	User Guide
