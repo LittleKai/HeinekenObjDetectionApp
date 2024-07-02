@@ -25,6 +25,8 @@ https://drive.google.com/file/d/1n_prUJRjVh_YmWB2nVhG7E7BypGkzV4q/view
 
 **Note: After granting permissions on first app use, you may need to restart the app.
 
+•	Image resources for testing the application: https://drive.google.com/file/d/1Aj0scaw66jNo5DovIYNG-EAUrL4iS7wR/view?usp=drive_link
+
 •	Install the downloaded APK on your Android Smartphone.
 
 4. References:
