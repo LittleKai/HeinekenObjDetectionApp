@@ -1,4 +1,4 @@
-Heineken Product Classifier App
+Heineken Product Detection App
 
 1. Introduction:
 
