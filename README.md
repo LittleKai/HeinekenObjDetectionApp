@@ -5,9 +5,12 @@ Heineken Product Classifier App
 Welcome to the Heineken Product Detection App project! This app helps users quickly and accurately identify and detect Heineken products. Leveraging advanced AI technology, the app enhances user experience by providing detailed information about Heineken's beer and beverage products.
 
 This is the application I developed for the AngelHack 2024 competition in Ho Chi Minh City.
+
+[Demo Image](https://github.com/LittleKai/HeinekenObjDetectionApp/blob/main/Demo/Screenshot_20240702_121742_HeneikenObjDetection.jpg)
+or you can see more [here](https://github.com/LittleKai/HeinekenObjDetectionApp/blob/main/Demo/Project_Heniken_aio_06.pdf)
 2. Key Features:
    
-•	Product Detection: Identify and detect Heineken products including beer, beverages, and other items. The total number of detectable classes is 60. You can view the list of classes [here](label.txt).
+•	Product Detection: Identify and detect Heineken products including beer, beverages, and other items. The total number of detectable classes is 60. You can view the list of classes [here](Demo/label.txt).
 
 •	Detailed Information: Provide detailed information about each product, including ingredients, origin, and related details.
 
