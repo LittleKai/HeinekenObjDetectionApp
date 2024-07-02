@@ -6,7 +6,7 @@ Welcome to the Heineken Product Detection App project! This app helps users quic
 
 This is the application I developed for the AngelHack 2024 competition in Ho Chi Minh City.
   ![Demo Image](Demo/Demo_HeneikenObjDetection.jpg)
-<p align="center">or you can see more </p>[here](Demo/Project_Heniken_aio_06.pdf)
+or you can see more [here.]([Demo/Project_Heniken_aio_06.pdf](https://github.com/LittleKai/HeinekenObjDetectionApp/blob/main/Demo/Project_Heniken_aio_06.pdf))
 
 2. Key Features:
    
